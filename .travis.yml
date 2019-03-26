@@ -6,6 +6,7 @@ cache:
 
 install:
 - pip install -U platformio
+- platformio lib install "Servo"
 
 env:
 - BOARD=uno
