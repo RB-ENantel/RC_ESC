@@ -20,4 +20,4 @@ speed	KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################
-ESC_CAL_DELAY KEYWORD3
+ESC_CAL_DELAY	KEYWORD3
