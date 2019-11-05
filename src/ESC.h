@@ -26,7 +26,7 @@ class ESC
 		void speed(int ESC_val);
 		uint32_t getCalibrationDelay(void);
 		void setCalibrationDelay(uint32_t calibration_delay);
-		uint32_t getStopePulse(void);
+		uint32_t getStopPulse(void);
 		void setStopPulse(uint32_t stop_pulse);
 
 	private:
@@ -39,8 +39,8 @@ class ESC
 		int oMax = 2000;
 		int oESC = 1000;
 		int oArm = 500;
-		int calibrationDelay = 8000;	// Calibration delay (milisecond)
-		int stopPulse = 500;	// stop pulse(milisecond)
+		uint32_t calibrationDelay = 8000;	// Calibration delay (milisecond)
+		uint32_t stopPulse = 500;	// Stop pulse(milisecond)
 		Servo myESC;		// create servo object to control an ESC
 
 
