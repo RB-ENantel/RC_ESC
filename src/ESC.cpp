@@ -71,7 +71,7 @@ void ESC::speed(int outputESC)
  * Get the current calibration delay in miliseconds
  *
  */
-uint32_t getCalibrationDelay(void)
+uint32_t ESC::getCalibrationDelay(void)
 {
 	return calibrationDelay;
 }
@@ -80,7 +80,7 @@ uint32_t getCalibrationDelay(void)
  * Set the current calibration delay in miliseconds
  *
  */
-void setCalibrationDelay(uint32_t calibration_delay)
+void ESC::setCalibrationDelay(uint32_t calibration_delay)
 {
 	calibrationDelay = calibration_delay;
 }
@@ -89,7 +89,7 @@ void setCalibrationDelay(uint32_t calibration_delay)
  * Get the current Stop pulse in microseconds
  *
  */
-uint32_t getStopPulse(void)
+uint32_t ESC::getStopPulse(void)
 {
 	return stopPulse;
 }
@@ -98,7 +98,7 @@ uint32_t getStopPulse(void)
  * Set the current Stop pulse in microseconds
  *
  */
-void setStopPulse(uint32_t stop_pulse)
+void ESC::setStopPulse(uint32_t stop_pulse)
 {
 	stopPulse = stop_pulse;
 }
