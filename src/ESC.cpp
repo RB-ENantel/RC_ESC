@@ -32,9 +32,9 @@ void ESC::calib(void)
 {
 	myESC.attach(oPin);  			// attaches the ESC on pin oPin to the ESC object
 	myESC.writeMicroseconds(oMax);
-		delay(ESC_CAL_DELAY);
+		delay(calibrationDelay);
 	myESC.writeMicroseconds(oMin);
-		delay(ESC_CAL_DELAY);
+		delay(calibrationDelay);
 	arm();
 }
 
@@ -54,7 +54,7 @@ void ESC::arm(void)
  */
 void ESC::stop(void)
 {
-	myESC.writeMicroseconds (ESC_STOP_PULSE);
+	myESC.writeMicroseconds (stopPulse);
 }
 
 /*
