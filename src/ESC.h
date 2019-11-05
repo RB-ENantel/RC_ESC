@@ -40,7 +40,7 @@ class ESC
 		int oESC = 1000;
 		int oArm = 500;
 		uint32_t calibrationDelay = 8000;	// Calibration delay (milisecond)
-		uint32_t stopPulse = 500;	// Stop pulse(milisecond)
+		uint32_t stopPulse = 500;	// Stop pulse (microseconds)
 		Servo myESC;		// create servo object to control an ESC
 
 
