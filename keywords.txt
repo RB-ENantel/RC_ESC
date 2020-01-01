@@ -22,4 +22,3 @@ setStopPulse	KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################
-ESC_CAL_DELAY	LITERAL1
