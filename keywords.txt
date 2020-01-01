@@ -16,6 +16,8 @@ calib	KEYWORD2
 arm		KEYWORD2
 stop	KEYWORD2
 speed	KEYWORD2
+setCalibrationDelay	KEYWORD2
+setStopPulse	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
