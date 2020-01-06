@@ -1,7 +1,7 @@
-/* Electronic Speed Controller (ESC) - Library */
-
 /*
-
+ * Electronic Speed Controller (ESC) - Library
+ *
+ *
 */
 
 #ifndef ESC_Library
@@ -14,8 +14,6 @@
 #endif
 
 #include <Servo.h>				// Including the Servo library
-#define ESC_CAL_DELAY	(8000)	// Calibration delay (milisecond)
-#define ESC_STOP_PULSE	(500)	//
 
 class ESC
 {
@@ -26,20 +24,22 @@ class ESC
 		void arm(void);
 		void stop(void);
 		void speed(int ESC_val);
-	
+		void setCalibrationDelay(uint32_t calibration_delay);
+		void setStopPulse(uint32_t stop_pulse);
+
 	private:
 	// < Local attributes >
 		// Hardware
 		byte oPin;			// ESC output Pin
-		
+
 		// Calibration
 		int oMin = 1000; 
 		int oMax = 2000;
 		int oESC = 1000;
 		int oArm = 500;
+		uint32_t calibrationDelay = 8000;	// Calibration delay (milisecond)
+		uint32_t stopPulse = 500;	// Stop pulse (microseconds)
 		Servo myESC;		// create servo object to control an ESC
-
-
 };
 
 #endif
