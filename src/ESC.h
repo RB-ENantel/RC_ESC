@@ -13,7 +13,11 @@
 	#include "WProgram.h"
 #endif
 
-#include <Servo.h>				// Including the Servo library
+#if (defined(ESP32) || defined(ARDUINO_ARCH_ESP32))
+	#include <ESP32Servo.h>                         // Including Library from https://github.com/jkb-git/ESP32Servo	
+#else
+	#include <Servo.h>				// Including the Servo library
+#endif
 
 class ESC
 {
